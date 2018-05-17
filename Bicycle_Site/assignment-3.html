@@ -1,0 +1,145 @@
+<html>
+<head>
+	<title> Assignment 3 </title>
+	<script src="jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+</head>
+
+<body background="bicycle.jpg">
+	<header class="header">
+		<nav>
+					<div class="dropdown">
+					  <button class="dropbtn">BICYCLES</button>
+					  <div class="dropdown-content">
+					    <a href="http://www.trekbikes.com/us/en_US/bikes/mountain-bikes/c/B300/">TREK</a>
+					    <a href="https://www.specialized.com/us/en/bikes/mountain">SPECIALIZED</a>
+					    <a href="http://www.santacruzbicycles.com/en-US">SANTACRUZ</a>
+					  </div>
+					</div>
+
+					<div class="dropdown">
+					  <button class="dropbtn">ROAD BIKES</button>
+					  <div class="dropdown-content">
+					    <a href="http://www.trekbikes.com/us/en_US/bikes/mountain-bikes/c/B300/">TREK</a>
+					    <a href="https://www.specialized.com/us/en/bikes/mountain">SPECIALIZED</a>
+					    <a href="http://www.santacruzbicycles.com/en-US">SANTACRUZ</a>
+					  </div>
+					</div>
+					
+					<div class="dropdown">
+					  <button class="dropbtn">MOUNTAIN BIKES</button>
+					  <div class="dropdown-content">
+					    <a href="http://www.trekbikes.com/us/en_US/bikes/mountain-bikes/c/B300/">TREK</a>
+					    <a href="https://www.specialized.com/us/en/bikes/mountain">SPECIALIZED</a>
+					    <a href="http://www.santacruzbicycles.com/en-US">SANTACRUZ</a>
+					  </div>
+					</div>
+
+					<div class="dropdown">
+					  <button class="dropbtn">CYCLING ROUTES</button>
+					  <div class="dropdown-content">
+					    <a href="http://www.trekbikes.com/us/en_US/bikes/mountain-bikes/c/B300/">TREK</a>
+					    <a href="https://www.specialized.com/us/en/bikes/mountain">SPECIALIZED</a>
+					    <a href="http://www.santacruzbicycles.com/en-US">SANTACRUZ</a>
+					  </div>
+					</div>
+
+					<div class="dropdown">
+					  <button class="dropbtn">MTB FAILS</button>
+					  <div class="dropdown-content">
+					    <a href="https://youtu.be/NIiqfqC0DEo">FAIL!</a>
+					    <a href="https://youtu.be/-T5Wr5XvI7w">OUCH!</a>
+					    <a href="https://youtu.be/M34mi2XKu0k">OH SNAP!</a>
+					  </div>
+					</div>
+		</nav>
+	</header>
+
+	<div class="content">
+	<h1> Ride The World! </h1>
+
+
+	<div class="textbody">
+	<p>
+	<img class="content" id="imgT" src="jump.jpg">
+   	
+	Bend Velo is a unique bike shop, geared towards building and providing practical bikes for the general public to ride for both pleasure and transportation . We specialize in J. Livingston repurposed rebuilds. Our mission is to get people out of their cars and onto their bikes. 
+	</p>
+
+	<p id="secondParagraph">
+	Riding your bike for basic transportation can be a life changing experience.
+	Bend Velo is a unique bike shop, geared towards building and providing practical bikes for the general public to ride for both pleasure and transportation . We specialize in J. Livingston repurposed rebuilds. Our mission is to get people out of their cars and onto their bikes. 
+
+	Riding your bike for basic transportation can be a life changing experience.
+	Let Bend Velo help you make this change.
+	We love steel bikes, from our complete selection of city bikes, to a full bike rental fleet. Our bikes are made to be useful, practical and fun. We stock Breezer, Surly, and J. Livingston bikes. We can also special order any Focus bike.
+
+	Our bicycle repair is second to none. We provide very fast turnaround, and excellent customer service. Our pricing is fair and competitive. From flat repairs to disc brake bleeds. Our service department will treat you right.</p></div>
+
+	<div class="submitText">
+		<form>
+			<textarea id="textbox" rows="10" cols="50"></textarea>
+			<br/>
+			<button type='button' onclick="return validateText()">Submit</button>
+		</form>
+	</div>
+
+	<div id="clearAndResetbuttons">
+		<button type='button' class="resetPics" onclick="resetPics()">Reset</button>
+		<button type='button' class="clearPics" onclick="clearPics()">Clear</button>
+	</div>
+	
+	<div class="tile" id="t1">
+		<img class="tileimage" src="rbr1.jpg">
+		<button class="close" onclick="hide('t1')">X</button>
+	</div>
+
+	<div class="tile" id="t2">
+		<img class="tileimage" src="rbr2.jpg">
+		<button class="close" onclick="hide('t2')">X</button>
+	</div>
+
+	<div class="tile" id="t3">
+		<img class="tileimage" src="rbr3.jpg">
+		<button class="close" onclick="hide('t3')">X</button>
+	</div>
+
+	<div class="tile" id="t4">
+		<img class="tileimage" src="rbr4.jpg">
+		<button class="close" onclick="hide('t4')">X</button>
+	</div>
+
+	<div class="tile" id="t5">
+		<img class="tileimage" src="wbc1.jpg">
+		<button class="close" onclick="hide('t5')">X</button>
+	</div>
+
+	<div class="tile" id="t6">
+		<img class="tileimage" src="wbc2.jpg">
+		<button class="close" onclick="hide('t6')">X</button>
+	</div>
+
+	<div class="tile" id="t7">
+		<img class="tileimage" src="wbc3.jpg">
+		<button class="close" onclick="hide('t7')">X</button>
+	</div>
+
+	<div class="tile" id="t8">
+		<img class="tileimage" src="wbc4.jpg">
+		<button class="close" onclick="hide('t8')">X</button>
+	</div>
+
+	<ul id="slideTest">
+		    <li><img src="tb3.jpg" style="display: none"></li>
+		    <li><img src="sf100.jpg" style="display: none"></li>
+		    <li><img src="sjfsr.jpg" style="display: none"></li>
+	</ul>
+	
+	</div>
+	<footer class="footer">
+		<p> Created by Tim Leavey and Josh Murray for Assignment 3. </p>
+	</footer>
+</body>
+
+</html>

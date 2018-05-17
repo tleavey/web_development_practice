@@ -1,0 +1,13 @@
+.login-form {
+	font-family: 'Open Sans', serif;
+	background: -webkit-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+	background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+	background: linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+	margin: 10px auto;
+	width: 30%;
+	border-radius: 10px;
+}
+
+input {
+	width: 100%;
+}
