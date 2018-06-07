@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html>
+	<!-- Tim Leavey -->
+	<!-- Khan Academy Tutorial Practice -->
+	<!-- 6 June 2018 -->
+	<head>
+		<meta charset="utf-8">
+		<title>Tim vs Khan Academy Tutorial</title>
+		<style>
+			
+			h2 {
+				color: rgb(255, 164, 33);
+				font-weight: bold;
+			}
+
+			body {
+				background-color: rgb(150, 70, 122);
+			}
+
+			#paragraph1 {
+				color: rgb(255, 79, 56);
+				background-color: rgb(70, 6, 69);
+				font-family: cursive;
+				line-height: 1.2em;
+			}
+
+			#main_page_heading {
+				color: rgb(75,0,130);
+			}
+
+			.lists {
+				background-color: rgb(254, 93, 30);
+				font-family: "Helvetica", sans-serif;
+			}
+
+			#the_table {
+				background-color: orange;
+			}
+
+			#paragraph2 {
+				font: italic 1.5em fantasy;
+			}
+
+			h1 {
+				font-family: monospace;
+				font-style: italic;
+				text-align: center;
+				text-shadow: 1px 1px 3px yellow;
+			}
+
+			h5 {
+				font-family: monospace;
+				font-style: italic;
+				text-align: center;
+				text-shadow: 1px 1px 3px yellow;
+			}
+
+			a {
+				text-decoration: none;
+				text-decoration-color: blue;
+				color: red;
+			}
+
+			.golden_beauties {
+				color: rgb(255, 164, 33);
+			}
+
+			#top_picture {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+		</style>
+	</head>
+	<body>
+		<h1 id="main_page_heading">Tim vs Khan Academy Tutorial</h1>
+		<h5>living in an ugly oister</h1>
+
+		<img src="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/24909887_10103641783433716_765634203976511351_n.jpg?_nc_cat=0&oh=312326040a30c0691517499d0db7fb3a&oe=5B7EBCDE" alt="Tim" width="300" id="top_picture">
+
+		<h2 class="golden_beauties">Notes About HTML, CSS, and JavaScript</h2>
+
+		<ul>
+			<li><a href="#unordered_lists">Lists</a></li>
+			<li><a href="#css_notes">CSS</a></li>
+			<li><a href="#links_and_more">Links</a></li>
+			<li><a href="#my_images">Images</a></li>
+			<li><a href="#my_bicycle_table">Tables</a></li>
+		</ul>
+
+		<p id="paragraph1">
+			!DOCTYPE html is required at the top of each html document. <em>utf-8</em> is for the <em>English</em> alphabet. The <em>title</em> tag will appear in bookmarks and at the top of the tab. <strong>Browsers <em>ignore</em> whitespace, unless you use the br tag.</strong> <br>
+			<br>
+			Break tags (br) do not need to be closed. <br>
+			<br>
+			Br (break) breaks the line. It's a 'newline'.
+		</p>
+
+		<h3 id="unordered_lists" class="golden_beauties">Unordered List</h3>
+
+		<ul class="lists">
+			<li>ul stands for unordered list.</li>
+			<li>li stands for list item</li>
+			<li>wrap li tags inside ul tags</li>
+			<li>'meta charset="utf-8"'' goes in the head</li>
+		</ul>
+
+		<h3 class="golden_beauties">Numbered List</h3>
+
+		<ol class="lists">
+			<li>ol stands for ordered list</li>
+			<li>wrap li inside ol just like wrapping li in ul</li>
+			<li>The strong tag makes all of the text inside the tag bold.</li>
+			<li>The em tag makes a word italicised, as it <em>emphasizes</em> the word.</li>
+		</ol>
+
+		<h3 id="css_notes" class="golden_beauties">CSS Notes</h3>
+
+		<ul class="lists">
+			<li>Add the style tag to the head.</li>
+			<li>The style tag renders CSS.</li><br>
+			<li>You can change all of the paragraphs by using: <strong>p { color: rgb();}</strong></li>
+			<li>Here's an example id:<strong>p id="paragraph1"</strong></li>
+			<li>You can change just one paragraph by using an id, which is marked with a pound/hash symbol: <strong>#paragraph1 {color: rgb();}</strong></li>
+			<li>IDs are <strong>case-sensitive</strong>. Use lower-case as to keep consistency.</li>
+			<li>IDs <strong><em>MUST</em></strong> be unique.</li><br>
+			<li>Classes are written with a period (.) instead of a pound/hash (#) like so: <strong>.lists {color: rgb();}</strong></li>
+			<li>Classes are case-sensitive, just like IDs.</li><br>
+			<li>Don't put spaces in names of classes or IDs. Use hyphens or underscores.</li>
+		</ul>
+		<h4 class="golden_beauties">CSS Examples</h4>
+		<ul>
+			<li>font-family: cursive;</li>
+			<li>font-family: "Helvetica", sans-serif;</li>
+			<li>font-size: 2em;</li>
+			<li>em is a relative unit, whereas px is not</li>
+			<li>font: italic 1.5em fantasy;</li>
+		</ul>
+
+		<h3 id="links_and_more" class="golden_beauties">Links & More HTML Stuff</h3>
+
+		<a target="_blank" href="https://i.ytimg.com/vi/-Cv68B-F5B0/maxresdefault.jpg">Here is a link to cute puppies!</a>
+
+
+		<ul class="lists">
+			<li>a tags mean anchor tags</li>
+			<li>href means hyper reference</li>
+			<li>target="_blank" opens the page in a new window</li>
+			<li>Example of opening a new page up: <strong>a target="_blank" href="url_goes_here"</strong></li>
+			<li>Use target when opening a page from a different domain</li>
+			<li>Absolute URLs (full address) are safer than relative URLs (relative path)</li>
+			<li>You can jump to a different section on the same page by linking to an id.</li>
+		</ul>
+
+
+
+		<h2 id="my_images">Inserting an Image</h2>
+
+		<p id="paragraph2">The img src tag means 'image source'. Put an equals sign after to define the value. Wrap the value in quotes. Add the alt tag to give the image a title. Always use the alt tag with images as the blind use an app that can read the alt text off an image text. If you want everyone to experience your webpage, use the alt tag! Image tags do not need to be closed. Change either height or width, but not both, or else the proportions will be messed up!</p>
+		
+		<a target="_blank" href="https://www.visitnorway.com"><img src="https://www.telegraph.co.uk/content/dam/Travel/2016/August/lofoten-norway-travel-ap.jpg?imwidth=1260" alt="Norway" width="500"></a>
+
+		<a target="_blank" href="https://www.huffingtonpost.com/2014/12/31/norway-greatest-place-on-earth_n_4550413.html"><img src="http://travelguide.nettavisen.no/wp-content/uploads/2015/03/MoskenesLofoten-980x660.jpeg" alt="Lofoten, Norway" width="500"></a>
+		<br>
+		
+
+		<h2 id="my_bicycle_table">Tables</h2>
+		<table id="the_table">
+			<thead>
+				<tr>
+					<th>Bicyle Brands</th>
+					<th>Models</th>
+					<th>Type</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Specialized</td>
+					<td>MEN'S S-WORKS ROUBAIX DI2</td>
+					<td>Road</td>
+				</tr>
+				<tr>
+					<td>KHS</td>
+					<td>4 SEASON 5000</td>
+					<td>Fat Tire</td>
+				</tr>
+				<tr>
+					<td>Trek</td>
+					<td>Full Stache 8</td>
+					<td>Mountain</td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+		<ul>
+			<li>thead is the column labels</li>
+			<li>include a single row in thead</li>
+			<li>tbody comes after thead</li>
+			<li>tr stands for table row</li>
+			<li>td stands for tabular data</li>
+			<li>table -> thead -> tr -> th</li>
+			<li>tbody -> tr -> td</li>
+			<li>thead and tbody are on same level of table hierarchy (not within each other)</li>
+		</ul>
+
+		<a href="#main_page_heading">Back to Top</a>
+		
+	</body>
+
+
+</html>
