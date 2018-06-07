@@ -4,9 +4,11 @@
 	<!-- Tim Leavey -->
 	<!-- Khan Academy Tutorial Practice -->
 	<!-- 6 June 2018 -->
+	<!-- Open in Firefox for best animation results -->
 	<head>
 		<meta charset="utf-8">
 		<title>Tim vs Khan Academy Tutorial</title>
+		<script type="text/javascript" src="processing.js"></script>
 		<style>
 			
 			h2 {
@@ -72,9 +74,22 @@
 				margin-right: auto;
 			}
 
+			pre {
+				background-color: #EEE;
+				padding: 15px;
+			}
+			
+			#theCanvas {
+				width: 500px;
+				margin: auto;
+				border: 5px solid black;
+				display: block;
+			}
+
 		</style>
 	</head>
 	<body>
+		<canvas id="theCanvas" data-processing-sources="sketchCanvas.pde" tabindex="0" width="500" height="500" style="image-rendering: -webkit-optimize-contrast !important;"></canvas>
 		<h1 id="main_page_heading">Tim vs Khan Academy Tutorial</h1>
 		<h5>living in an ugly oister</h1>
 
@@ -206,7 +221,7 @@
 		</ul>
 
 		<a href="#main_page_heading">Back to Top</a>
-		
+
 	</body>
 
 
